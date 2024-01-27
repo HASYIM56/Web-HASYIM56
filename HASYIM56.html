@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+  
+    @font-face {
+      font-family: 'CustomFont';
+      src: url('H56.ttf') format('truetype');
+    }
+    
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      background-image: url('Cat.jpg');
+      background-size: cover;
+      background-color: black;
+    }
+    
+    p {
+         color: Rgba(0,255,0,1);
+         text-shadow: 0 0 10px rgba(0,255,0,0.8), 0 0 20px rgba(0,255,0,0.8);
+         font-size: 44px;
+         text-align: center;
+         font-family: 'CustomFont', sans-serif;
+         font-weight: bold;
+         font-style: italic;
+         height: 30vh;
+    }
+
+    .fade-in-text {
+      opacity: 0;
+      transition: opacity 3.9s ease-in-out;
+    }
+  </style>
+  <title>HASYIM56 MODDER</title>
+</head>
+<body>
+  <div class="fade-in-text">
+    <p>HASYIM56<br>MODDER!</p>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var fadeInText = document.querySelector('.fade-in-text');
+      fadeInText.style.opacity = 1;
+    });
+  </script>
+</body>
+</html>  <!-- HASYIM56 MODDER -->
